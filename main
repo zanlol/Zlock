@@ -608,7 +608,7 @@ local function KYUMZAV_fake_script() -- ScreenGui.Notification Script
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "ZLock"; --must be string
 		Text = "BEST CAM LOCK (REAL)"; --must be string
-		Icon = "rbxassetid://156507320"; --optional
+		Icon = "rbxassetid://6542985566"; --optional
 		Duration = 5; -- defaults to 5 secs if no duration is set
 		Button1 = "🔥";
 	})
