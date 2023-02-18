@@ -1,0 +1,952 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Top = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Buttons = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local Rejoin = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local TextLabel_4 = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local Animation = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_7 = Instance.new("UIGradient")
+local TextLabel_5 = Instance.new("TextLabel")
+local UIGradient_8 = Instance.new("UIGradient")
+local body = Instance.new("Frame")
+local Head = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local LeftArm = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local RightArm = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local RightLeg = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local LeftLeg = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Torso = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local UIGradient_9 = Instance.new("UIGradient")
+local Trans = Instance.new("Frame")
+local UIGradient_10 = Instance.new("UIGradient")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local target = Instance.new("TextLabel")
+local UIGradient_11 = Instance.new("UIGradient")
+local UICorner_14 = Instance.new("UICorner")
+local Open = Instance.new("ImageButton")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_12 = Instance.new("UIGradient")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+Main.Position = UDim2.new(0.40751043, 0, 0.431506842, 0)
+Main.Size = UDim2.new(0.184283733, 0, 0.241095886, 0)
+Main.Active = true
+
+UICorner.Parent = Main
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(61, 61, 61)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 45, 45))}
+UIGradient.Rotation = 270
+UIGradient.Parent = Main
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+Top.Position = UDim2.new(-3.68514156e-05, 0, 0.00537040038, 0)
+Top.Size = UDim2.new(1, 0, 0.113636367, 0)
+
+UICorner_2.Parent = Top
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(39, 39, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 45, 45))}
+UIGradient_2.Rotation = 270
+UIGradient_2.Parent = Top
+
+ImageLabel.Parent = Top
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0, 0, -0.0472595207, 0)
+ImageLabel.Size = UDim2.new(0.0792452842, 0, 1, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6031280882"
+
+TextLabel.Parent = Top
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0270000007, 0, 0.180000007, 0)
+TextLabel.Size = UDim2.new(0.279245287, 0, 0.600000024, 0)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Options"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextStrokeTransparency = 0.700
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Top
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0113207549, 0, 0.180000305, 0)
+TextLabel_2.Size = UDim2.new(0.97735852, 0, 0.600000024, 0)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "ZLock"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Right
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Main
+Buttons.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Buttons.Position = UDim2.new(0.0264150947, 0, 0.147727266, 0)
+Buttons.Size = UDim2.new(0.535849035, 0, 0.8125, 0)
+
+UICorner_3.Parent = Buttons
+
+ESP.Name = "ESP"
+ESP.Parent = Buttons
+ESP.BackgroundColor3 = Color3.fromRGB(190, 190, 190)
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.Position = UDim2.new(0.0513155237, 0, 0.0585664324, 0)
+ESP.Size = UDim2.new(0.880281687, 0, 0.111888111, 0)
+ESP.Font = Enum.Font.Ubuntu
+ESP.Text = " "
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 16)
+UICorner_4.Parent = ESP
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 31, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIGradient_3.Rotation = 270
+UIGradient_3.Parent = ESP
+
+TextLabel_3.Parent = ESP
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.00800000038, 0, 0.0500000007, 0)
+TextLabel_3.Size = UDim2.new(1, 0, 0.8125, 0)
+TextLabel_3.Font = Enum.Font.Ubuntu
+TextLabel_3.Text = "ESP (Off)"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 135, 135)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(194, 194, 194))}
+UIGradient_4.Rotation = 270
+UIGradient_4.Parent = TextLabel_3
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = Buttons
+Rejoin.BackgroundColor3 = Color3.fromRGB(190, 190, 190)
+Rejoin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.Position = UDim2.new(0.050999999, 0, 0.219999999, 0)
+Rejoin.Size = UDim2.new(0.880281687, 0, 0.111888111, 0)
+Rejoin.Font = Enum.Font.Ubuntu
+Rejoin.Text = " "
+Rejoin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rejoin.TextScaled = true
+Rejoin.TextSize = 14.000
+Rejoin.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 16)
+UICorner_5.Parent = Rejoin
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 31, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIGradient_5.Rotation = 270
+UIGradient_5.Parent = Rejoin
+
+TextLabel_4.Parent = Rejoin
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.00800000038, 0, 0.0500000007, 0)
+TextLabel_4.Size = UDim2.new(1, 0, 0.8125, 0)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "Rejoin (Coming Soon)"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 135, 135)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(194, 194, 194))}
+UIGradient_6.Rotation = 270
+UIGradient_6.Parent = TextLabel_4
+
+Animation.Name = "Animation"
+Animation.Parent = Buttons
+Animation.BackgroundColor3 = Color3.fromRGB(190, 190, 190)
+Animation.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Animation.Position = UDim2.new(0.050999999, 0, 0.370000005, 0)
+Animation.Size = UDim2.new(0.880281687, 0, 0.111888111, 0)
+Animation.Font = Enum.Font.Ubuntu
+Animation.Text = " "
+Animation.TextColor3 = Color3.fromRGB(255, 255, 255)
+Animation.TextScaled = true
+Animation.TextSize = 14.000
+Animation.TextWrapped = true
+Animation.MouseButton1Down:Connect(function()
+	repeat
+		wait()
+	until game:IsLoaded() and game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR") and game.Players.LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("AnimationPack")
+
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Lean") then
+		game.ReplicatedStorage.ClientAnimations.Lean:Destroy()
+	end
+
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Lay") then
+		game.ReplicatedStorage.ClientAnimations.Lay:Destroy()
+	end
+
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Dance1") then
+		game.ReplicatedStorage.ClientAnimations.Dance1:Destroy()
+	end
+
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Dance2") then
+		game.ReplicatedStorage.ClientAnimations.Dance2:Destroy()
+	end
+
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Greet") then
+		game.ReplicatedStorage.ClientAnimations.Greet:Destroy()
+	end
+
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Chest Pump") then
+		game.ReplicatedStorage.ClientAnimations["Chest Pump"]:Destroy()
+	end
+
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Praying") then
+		game.ReplicatedStorage.ClientAnimations.Praying:Destroy()
+	end
+
+	local Animations = game.ReplicatedStorage.ClientAnimations
+
+	local LeanAnimation = Instance.new("Animation", Animations)
+	LeanAnimation.Name = "Lean"
+	LeanAnimation.AnimationId = "rbxassetid://3152375249"
+
+	local LayAnimation = Instance.new("Animation", Animations)
+	LayAnimation.Name = "Lay"
+	LayAnimation.AnimationId = "rbxassetid://3152378852"
+
+	local Dance1Animation = Instance.new("Animation", Animations)
+	Dance1Animation.Name = "Dance1"
+	Dance1Animation.AnimationId = "rbxassetid://3189773368"
+
+	local Dance2Animation = Instance.new("Animation", Animations)
+	Dance2Animation.Name = "Dance2"
+	Dance2Animation.AnimationId = "rbxassetid://3189776546"
+
+	local GreetAnimation = Instance.new("Animation", Animations)
+	GreetAnimation.Name = "Greet"
+	GreetAnimation.AnimationId = "rbxassetid://3189777795"
+
+	local ChestPumpAnimation = Instance.new("Animation", Animations)
+	ChestPumpAnimation.Name = "Chest Pump"
+	ChestPumpAnimation.AnimationId = "rbxassetid://3189779152"
+
+	local PrayingAnimation = Instance.new("Animation", Animations)
+	PrayingAnimation.Name = "Praying"
+	PrayingAnimation.AnimationId = "rbxassetid://3487719500"
+
+	function AnimationPack(Character)
+		Character:WaitForChild'Humanoid'
+		repeat
+			wait()
+		until game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR") and game.Players.LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("AnimationPack")
+
+		local AnimationPack = game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.AnimationPack
+		local ScrollingFrame = AnimationPack.ScrollingFrame
+		local CloseButton = AnimationPack.CloseButton
+
+		local Lean = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LeanAnimation)
+
+		local Lay = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LayAnimation)
+
+		local Dance1 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance1Animation)
+
+		local Dance2 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance2Animation)
+
+		local Greet = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(GreetAnimation)
+
+		local ChestPump = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(ChestPumpAnimation)
+
+		local Praying = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(PrayingAnimation)
+
+		AnimationPack.Visible = true
+
+		AnimationPack.ScrollingFrame.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+		for i,v in pairs(ScrollingFrame:GetChildren()) do
+			if v.Name == "TextButton" then
+				if v.Text == "Lean" then
+					v.Name = "LeanButton"
+				end
+			end
+		end
+
+		for i,v in pairs(ScrollingFrame:GetChildren()) do
+			if v.Name == "TextButton" then
+				if v.Text == "Lay" then
+					v.Name = "LayButton"
+				end
+			end
+		end
+
+		for i,v in pairs(ScrollingFrame:GetChildren()) do
+			if v.Name == "TextButton" then
+				if v.Text == "Dance1" then
+					v.Name = "Dance1Button"
+				end
+			end
+		end
+
+		for i,v in pairs(ScrollingFrame:GetChildren()) do
+			if v.Name == "TextButton" then
+				if v.Text == "Dance2" then
+					v.Name = "Dance2Button"
+				end
+			end
+		end
+
+		for i,v in pairs(ScrollingFrame:GetChildren()) do
+			if v.Name == "TextButton" then
+				if v.Text == "Greet" then
+					v.Name = "GreetButton"
+				end
+			end
+		end
+
+		for i,v in pairs(ScrollingFrame:GetChildren()) do
+			if v.Name == "TextButton" then
+				if v.Text == "Chest Pump" then
+					v.Name = "ChestPumpButton"
+				end
+			end
+		end
+
+		for i,v in pairs(ScrollingFrame:GetChildren()) do
+			if v.Name == "TextButton" then
+				if v.Text == "Praying" then
+					v.Name = "PrayingButton"
+				end
+			end
+		end
+
+		function Stop()
+			Lean:Stop()
+			Lay:Stop()
+			Dance1:Stop()
+			Dance2:Stop()
+			Greet:Stop()
+			ChestPump:Stop()
+			Praying:Stop()
+		end
+
+		local LeanTextButton = ScrollingFrame.LeanButton
+		local LayTextButton = ScrollingFrame.LayButton
+		local Dance1TextButton = ScrollingFrame.Dance1Button
+		local Dance2TextButton = ScrollingFrame.Dance2Button
+		local GreetTextButton = ScrollingFrame.GreetButton
+		local ChestPumpTextButton = ScrollingFrame.ChestPumpButton
+		local PrayingTextButton = ScrollingFrame.PrayingButton
+
+		AnimationPack.MouseButton1Click:Connect(function()
+			if ScrollingFrame.Visible == false then
+				ScrollingFrame.Visible = true
+				CloseButton.Visible = true
+			end
+		end)
+		CloseButton.MouseButton1Click:Connect(function()
+			if ScrollingFrame.Visible == true then
+				ScrollingFrame.Visible = false
+				CloseButton.Visible = false
+			end
+		end)
+		LeanTextButton.MouseButton1Click:Connect(function()
+			Stop()
+			Lean:Play()
+		end)
+		LayTextButton.MouseButton1Click:Connect(function()
+			Stop()
+			Lay:Play()
+		end)
+		Dance1TextButton.MouseButton1Click:Connect(function()
+			Stop()
+			Dance1:Play()
+		end)
+		Dance2TextButton.MouseButton1Click:Connect(function()
+			Stop()
+			Dance2:Play()
+		end)
+		GreetTextButton.MouseButton1Click:Connect(function()
+			Stop()
+			Greet:Play()
+		end)
+		ChestPumpTextButton.MouseButton1Click:Connect(function()
+			Stop()
+			ChestPump:Play()
+		end)
+		PrayingTextButton.MouseButton1Click:Connect(function()
+			Stop()
+			Praying:Play()
+		end)
+
+		game:GetService("Players").LocalPlayer.Character.Humanoid.Running:Connect(function()
+			Stop()
+		end)
+
+		game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
+			Stop()
+		end)
+	end
+	AnimationPack(game.Players.LocalPlayer.Character)
+	game.Players.LocalPlayer.CharacterAdded:Connect(AnimationPack)
+end)
+
+UICorner_6.CornerRadius = UDim.new(0, 16)
+UICorner_6.Parent = Animation
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 31, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(47, 47, 47))}
+UIGradient_7.Rotation = 270
+UIGradient_7.Parent = Animation
+
+TextLabel_5.Parent = Animation
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.00800000038, 0, 0.0500000007, 0)
+TextLabel_5.Size = UDim2.new(1, 0, 0.8125, 0)
+TextLabel_5.Font = Enum.Font.Ubuntu
+TextLabel_5.Text = "Animation Pack"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 135, 135)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(194, 194, 194))}
+UIGradient_8.Rotation = 270
+UIGradient_8.Parent = TextLabel_5
+
+body.Name = "body"
+body.Parent = Main
+body.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+body.BackgroundTransparency = 0.990
+body.Position = UDim2.new(0.561999977, 0, 0.214590907, 0)
+body.Size = UDim2.new(0.377358496, 0, 0.568181813, 0)
+
+Head.Name = "Head"
+Head.Parent = body
+Head.BackgroundColor3 = Color3.fromRGB(81, 81, 80)
+Head.BackgroundTransparency = 0.550
+Head.Position = UDim2.new(0.425596327, 0, 0.123750001, 0)
+Head.Size = UDim2.new(0.247406542, 0, 0.234109581, 0)
+
+UICorner_7.Parent = Head
+
+LeftArm.Name = "Left Arm"
+LeftArm.Parent = body
+LeftArm.BackgroundColor3 = Color3.fromRGB(81, 81, 80)
+LeftArm.BackgroundTransparency = 0.550
+LeftArm.Position = UDim2.new(0.116876222, 0, 0.386803597, 0)
+LeftArm.Size = UDim2.new(0.200281471, 0, 0.412478685, 0)
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = LeftArm
+
+RightArm.Name = "Right Arm"
+RightArm.Parent = body
+RightArm.BackgroundColor3 = Color3.fromRGB(81, 81, 80)
+RightArm.BackgroundTransparency = 0.550
+RightArm.Position = UDim2.new(0.799718022, 0, 0.386803597, 0)
+RightArm.Size = UDim2.new(0.200281471, 0, 0.412478685, 0)
+
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = RightArm
+
+RightLeg.Name = "Right Leg"
+RightLeg.Parent = body
+RightLeg.BackgroundColor3 = Color3.fromRGB(81, 81, 80)
+RightLeg.BackgroundTransparency = 0.550
+RightLeg.Position = UDim2.new(0.56456542, 0, 0.831611931, 0)
+RightLeg.Size = UDim2.new(0.200281471, 0, 0.412478685, 0)
+
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = RightLeg
+
+LeftLeg.Name = "Left Leg"
+LeftLeg.Parent = body
+LeftLeg.BackgroundColor3 = Color3.fromRGB(81, 81, 80)
+LeftLeg.BackgroundTransparency = 0.550
+LeftLeg.Position = UDim2.new(0.340720832, 0, 0.831611931, 0)
+LeftLeg.Size = UDim2.new(0.200281471, 0, 0.412478685, 0)
+
+UICorner_11.CornerRadius = UDim.new(0, 3)
+UICorner_11.Parent = LeftLeg
+
+Torso.Name = "Torso"
+Torso.Parent = body
+Torso.BackgroundColor3 = Color3.fromRGB(181, 89, 89)
+Torso.BackgroundTransparency = 0.750
+Torso.Position = UDim2.new(0.346611321, 0, 0.385689706, 0)
+Torso.Size = UDim2.new(0.424125433, 0, 0.412478685, 0)
+
+UICorner_12.CornerRadius = UDim.new(0, 3)
+UICorner_12.Parent = Torso
+
+TextLabel_6.Parent = body
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0479998775, 0, -0.119999997, 0)
+TextLabel_6.Size = UDim2.new(1, 0, 0.154919744, 0)
+TextLabel_6.Font = Enum.Font.Ubuntu
+TextLabel_6.Text = "Locked : UpperTorso"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 135, 135)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(194, 194, 194))}
+UIGradient_9.Rotation = 270
+UIGradient_9.Parent = TextLabel_6
+
+Trans.Name = "Trans"
+Trans.Parent = Main
+Trans.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+Trans.Position = UDim2.new(0.000452831388, 0, 0.000181823969, 0)
+Trans.Size = UDim2.new(1, 0, 1, 0)
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(21, 21, 21)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 45, 45))}
+UIGradient_10.Rotation = 270
+UIGradient_10.Parent = Trans
+
+UICorner_13.Parent = Trans
+
+TextLabel_7.Parent = Trans
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0113207549, 0, 0.373182118, 0)
+TextLabel_7.Size = UDim2.new(0.97735852, 0, 0.221590906, 0)
+TextLabel_7.Font = Enum.Font.SciFi
+TextLabel_7.Text = "ZLock"
+TextLabel_7.TextColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextWrapped = true
+
+target.Name = "target"
+target.Parent = ScreenGui
+target.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+target.BackgroundTransparency = 0.500
+target.BorderColor3 = Color3.fromRGB(0, 0, 0)
+target.Position = UDim2.new(0.489757359, -100, 0.0383561663, 0)
+target.Size = UDim2.new(0.158730164, 0, 0.0356164388, 0)
+target.Font = Enum.Font.Ubuntu
+target.Text = "Target : nil"
+target.TextColor3 = Color3.fromRGB(255, 255, 255)
+target.TextScaled = true
+target.TextSize = 24.000
+target.TextWrapped = true
+target.Active = true
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 135, 135)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(194, 194, 194))}
+UIGradient_11.Rotation = 270
+UIGradient_11.Parent = target
+
+UICorner_14.CornerRadius = UDim.new(0, 10)
+UICorner_14.Parent = target
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Open.Position = UDim2.new(0.00486787222, 0, 0.928767145, 0)
+Open.Size = UDim2.new(0.0319888741, 0, 0.0630136952, 0)
+Open.Image = "http://www.roblox.com/asset/?id=6031280882"
+Open.Active = true
+
+UICorner_15.CornerRadius = UDim.new(0, 10)
+UICorner_15.Parent = Open
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(125, 125, 125)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_12.Rotation = 270
+UIGradient_12.Parent = Open
+
+-- Scripts:
+
+local function KYUMZAV_fake_script() -- ScreenGui.Notification Script 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	--put this in starterplayerscripts or startergui
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "ZLock"; --must be string
+		Text = "BEST CAM LOCK (REAL)"; --must be string
+		Icon = "rbxassetid://156507320"; --optional
+		Duration = 5; -- defaults to 5 secs if no duration is set
+		Button1 = "🔥";
+	})
+end
+coroutine.wrap(KYUMZAV_fake_script)()
+local function ZYAL_fake_script() -- Main.DragScript 
+	local script = Instance.new('LocalScript', Main)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+
+end
+coroutine.wrap(ZYAL_fake_script)()
+local function CYAFJIU_fake_script() -- ESP.LocalScript 
+	local script = Instance.new('LocalScript', ESP)
+
+	local players = game:GetService("Players")
+
+	local espEnabled = false
+
+	local function onButtonClick()
+		espEnabled = not espEnabled
+		if espEnabled then
+			script.Parent.TextLabel.Text = "ESP (On)"
+			for _, player in pairs(players:GetPlayers()) do
+				if player.Character then
+					local outline = Instance.new("Highlight")
+					outline.Name = "ESPOutline"
+					outline.OutlineTransparency = 0
+					outline.OutlineColor = Color3.new(1, 0, 0)
+					outline.Parent = player.Character
+
+					local billboard = Instance.new("BillboardGui")
+					billboard.Size = UDim2.new(0, 100, 0, 30)
+					billboard.StudsOffset = Vector3.new(0, 3, 0)
+					billboard.Parent = player.Character
+
+					local textLabel = Instance.new("TextLabel")
+					textLabel.Text = player.Name
+					textLabel.Size = UDim2.new(1, 0, 1, 0)
+					textLabel.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+					textLabel.Font = Enum.Font.SourceSans
+					textLabel.TextColor3 = Color3.new(1, 0, 0)
+					textLabel.Parent = billboard
+					textLabel.TextScaled = true
+				end
+			end
+		else
+			script.Parent.TextLabel.Text = "ESP (Off)"
+			for _, player in pairs(players:GetPlayers()) do
+				if player.Character then
+					local outline = player.Character:FindFirstChild("ESPOutline")
+					if outline then
+						outline:Destroy()
+					end
+					local billboard = player.Character:FindFirstChild("BillboardGui")
+					if billboard then
+						billboard:Destroy()
+					end
+				end
+			end
+		end
+	end
+
+	local button = script.Parent
+	button.MouseButton1Down:Connect(onButtonClick)
+
+end
+coroutine.wrap(CYAFJIU_fake_script)()
+local function SJIYPR_fake_script() -- Trans.LocalScript 
+	local script = Instance.new('LocalScript', Trans)
+
+	-- Get the GUI frame to tween
+	local frame = script.Parent.TextLabel
+
+	-- Set the starting transparency to 0
+	frame.TextTransparency = 0
+
+	-- Create a TweenInfo object to define the duration and easing style of the tween
+	local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
+
+	-- Create a new tween using the TweenService
+	local tween = game:GetService("TweenService"):Create(frame, tweenInfo, {TextTransparency = 1})
+
+	-- Start the tween
+	tween:Play()
+
+	-- Connect a function to be called when the tween completes
+	tween.Completed:Connect(function()
+		-- Set the Visible property to false once the frame has fully faded out
+		frame.Visible = false
+	end)
+
+end
+coroutine.wrap(SJIYPR_fake_script)()
+local function GHJRXMQ_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	-- Get the GUI frame to tween
+	local frame = script.Parent.Trans
+
+	-- Set the starting transparency to 0
+	frame.BackgroundTransparency = 0
+
+	-- Create a TweenInfo object to define the duration and easing style of the tween
+	local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
+
+	-- Create a new tween using the TweenService
+	local tween = game:GetService("TweenService"):Create(frame, tweenInfo, {BackgroundTransparency = 1})
+
+	-- Start the tween
+	tween:Play()
+
+	-- Connect a function to be called when the tween completes
+	tween.Completed:Connect(function()
+		-- Set the Visible property to false once the frame has fully faded out
+		frame.Visible = false
+	end)
+
+end
+coroutine.wrap(GHJRXMQ_fake_script)()
+local function BZOC_fake_script() -- ScreenGui.Handler 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	PLAYER = game.Players.LocalPlayer
+	MOUSE = PLAYER:GetMouse()
+	CC = game.Workspace.CurrentCamera
+
+	ENABLED = false
+	ESP_ENABLED = false
+
+	_G.FREE_FOR_ALL = true
+
+	_G.ESP_BIND = 52
+
+	_G.AIM_AT = "UpperTorso"
+
+	wait(1)
+
+	function GetNearestPlayerToMouse()
+		local PLAYERS = {}
+		local PLAYER_HOLD = {}
+		local DISTANCES = {}
+		for i, v in pairs(game.Players:GetPlayers()) do
+			if v ~= PLAYER then
+				table.insert(PLAYERS, v)
+			end
+		end
+		for i, v in pairs(PLAYERS) do
+			if _G.FREE_FOR_ALL == false then
+				if v and (v.Character) ~= nil and v.TeamColor ~= PLAYER.TeamColor then
+					local AIM = v.Character:FindFirstChild(_G.AIM_AT)
+					if AIM ~= nil then
+						local DISTANCE = (AIM.Position - game.Workspace.CurrentCamera.CoordinateFrame.p).magnitude
+						local RAY =
+							Ray.new(
+								game.Workspace.CurrentCamera.CoordinateFrame.p,
+								(MOUSE.Hit.p - CC.CoordinateFrame.p).unit * DISTANCE
+							)
+						local HIT, POS = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+						local DIFF = math.floor((POS - AIM.Position).magnitude)
+						PLAYER_HOLD[v.Name .. i] = {}
+						PLAYER_HOLD[v.Name .. i].dist = DISTANCE
+						PLAYER_HOLD[v.Name .. i].plr = v
+						PLAYER_HOLD[v.Name .. i].diff = DIFF
+						table.insert(DISTANCES, DIFF)
+					end
+				end
+			elseif _G.FREE_FOR_ALL == true then
+				local AIM = v.Character:FindFirstChild(_G.AIM_AT)
+				if AIM ~= nil then
+					local DISTANCE = (AIM.Position - game.Workspace.CurrentCamera.CoordinateFrame.p).magnitude
+					local RAY =
+						Ray.new(
+							game.Workspace.CurrentCamera.CoordinateFrame.p,
+							(MOUSE.Hit.p - CC.CoordinateFrame.p).unit * DISTANCE
+						)
+					local HIT, POS = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+					local DIFF = math.floor((POS - AIM.Position).magnitude)
+					PLAYER_HOLD[v.Name .. i] = {}
+					PLAYER_HOLD[v.Name .. i].dist = DISTANCE
+					PLAYER_HOLD[v.Name .. i].plr = v
+					PLAYER_HOLD[v.Name .. i].diff = DIFF
+					table.insert(DISTANCES, DIFF)
+				end
+			end
+		end
+
+		if unpack(DISTANCES) == nil then
+			return false
+		end
+
+		local L_DISTANCE = math.floor(math.min(unpack(DISTANCES)))
+		if L_DISTANCE > 20 then
+			return false
+		end
+
+		for i, v in pairs(PLAYER_HOLD) do
+			if v.diff == L_DISTANCE then
+				return v.plr
+			end
+		end
+		return false
+	end
+
+	local GUI_TARGET = script.Parent.target
+
+	local GUI_AIM_AT = script.Parent.Main.body.TextLabel
+
+	local TRACK = false
+
+	function FIND()
+		CLEAR()
+		TRACK = true
+		spawn(
+			function()
+				while wait() do
+					if TRACK then
+						CLEAR()
+						for i, v in pairs(game.Players:GetChildren()) do
+							if v.Character and v.Character:FindFirstChild("UpperTorso") then
+								if _G.FREE_FOR_ALL == false then
+									if v.TeamColor ~= PLAYER.TeamColor then
+										if v.Character:FindFirstChild("UpperTorso") then
+											CREATE(v.Character.UpperTorso, true)
+										end
+									end
+								else
+									if v.Character:FindFirstChild("UpperTorso") then
+										CREATE(v.Character.UpperTorso, true)
+									end
+								end
+							end
+						end
+					end
+				end
+				wait(1)
+			end
+		)
+	end
+
+	MOUSE.Button2Down:connect(
+		function()
+			ENABLED = true
+		end
+	)
+
+	MOUSE.Button2Up:connect(
+		function()
+			ENABLED = false
+		end
+	)
+
+	game:GetService("RunService").RenderStepped:connect(
+	function()
+		if ENABLED then
+			local TARGET = GetNearestPlayerToMouse()
+			if (TARGET ~= false) then
+				local AIM = TARGET.Character:FindFirstChild(_G.AIM_AT)
+				if AIM then
+					CC.CoordinateFrame = CFrame.new(CC.CoordinateFrame.p, AIM.CFrame.p)
+				end
+				GUI_TARGET.Text = "Target : " .. TARGET.Name:sub(1, 5)
+			else
+				GUI_TARGET.Text = "Target : nil"
+			end
+		end
+	end
+	)
+
+end
+coroutine.wrap(BZOC_fake_script)()
+local function QLFLSPS_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local button = script.Parent
+	local object = script.Parent.Parent.Main
+	local originalSize = object.Size
+	local isBig = false
+	local timeout = 3
+
+	function onClick()
+		if isBig then
+			object:TweenSize(originalSize, "Out", "Quad", 0.5, true)
+			wait(0.5)
+			object:TweenSize(UDim2.new(0.002, 0,0.008, 0), "In", "Quad", 0.5, true)
+			isBig = false
+			wait(0.53)
+			object.Visible = false
+		else
+			object:TweenSize(UDim2.new(0.001, 0,0.241, 0), "In", "Quad", 0.5, true)
+			object.Visible = true
+			isBig = true
+			wait(0.5)
+			object:TweenSize(UDim2.new(0.184, 0,0.241, 0), "In", "Quad", 0.5, true)
+		end
+		button.Enabled = false
+		wait(timeout)
+		button.Enabled = true
+	end
+
+	button.MouseButton1Click:Connect(onClick)
+
+end
+coroutine.wrap(QLFLSPS_fake_script)()
